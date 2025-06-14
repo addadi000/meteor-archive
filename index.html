@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daddy Archive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://wallpapercave.com/wp/wp7930285.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .star {
+      position: absolute;
+      background: rgb(144, 255, 203);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .star.small {
+      width: 5px;
+      height: 5px;
+      animation-name: floatX;
+      animation-duration: 4s;
+    }
+    .star.medium {
+      width: 3px;
+      height: 3px;
+      animation-name: floatX;
+      animation-duration: 6s;
+    }
+    .star.large {
+      width: 4px;
+      height: 4px;
+      animation-name: floatX;
+      animation-duration: 8s;
+    }
+    @keyframes floatX {
+      0% { transform: translateX(0); opacity: 0.3; }
+      50% { transform: translateX(6px); opacity: 1; }
+      100% { transform: translateX(0); opacity: 0.3; }
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col items-center relative overflow-x-auto">
+
+  <div class="star small" style="top:10%; left:15%; animation-delay: 0s;"></div>
+  <div class="star medium" style="top:20%; left:80%; animation-delay: 1s;"></div>
+  <div class="star large" style="top:50%; left:50%; animation-delay: 2s;"></div>
+  <div class="star medium" style="top:70%; left:30%; animation-delay: 3s;"></div>
+  <div class="star small" style="top:80%; left:75%; animation-delay: 1.5s;"></div>
+  <div class="star small" style="top:35%; left:65%; animation-delay: 0.7s;"></div>
+  <div class="star medium" style="top:40%; left:20%; animation-delay: 1.3s;"></div>
+
+  <header class="mt-10 text-center relative w-fit mx-auto z-20">
+    <img src="https://mctitles.com/images/old/Minecraft_logo1.webp"
+         alt="＜Show Error＞"
+         class="w-[500px] mx-auto mb-4 relative z-10">
+  </header>
+
+  <main class="flex space-x-8 max-w-full px-4 mt-10 overflow-x-auto z-20">
+    <section class="min-w-[300px] bg-gray-800 bg-opacity-70 rounded-lg shadow-lg p-6">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-600 flex items-center gap-2">
+         Client
+        <span class="text-yellow-300 animate-pulse">★</span>
+      </h2>
+
+      <div class="mb-6 space-y-4">
+        <div class="bg-gray-900 bg-opacity-80 rounded-lg p-4 shadow-md">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold text-lg">meteor-1.21.5-47.jar</span>
+            <span class="text-sm text-gray-400">2025/06/14</span>
+          </div>
+          <div class="flex justify-between items-center text-sm text-gray-300">
+            <a href="https://github.com/addadi000/minecraft-archive-mod/raw/refs/heads/main/file/meteor/meteor-client-1.21.5-47.jar" target="_blank" class="text-blue-400 hover:underline">Download</a>
+            <span>by addadi000</span>
+          </div>
+        </div>
+        <div class="bg-gray-900 bg-opacity-80 rounded-lg p-4 shadow-md">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-semibold text-lg">Cheatbreaker_Setup.exe</span>
+            <span class="text-sm text-gray-400">????</span>
+          </div>
+          <div class="flex justify-between items-center text-sm text-gray-300">
+            <a href="https://r2.cheatbreaker.net/Launcher/master/Windows/amd64/CheatBreaker_Setup.exe" target="_blank" class="text-blue-400 hover:underline">Download</a>
+            <span>by ????</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-w-[300px] bg-gray-800 bg-opacity-70 rounded-lg shadow-lg p-6">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-600 flex items-center gap-2">
+        Utility
+        <span class="text-yellow-300 animate-pulse">★</span>
+      </h2>
+
+      <div class="bg-gray-900 bg-opacity-80 rounded-lg p-4 shadow-md">
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="min-w-[300px] bg-gray-800 bg-opacity-70 rounded-lg shadow-lg p-6">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-600 flex items-center gap-2">
+        Cosmetic
+        <span class="text-yellow-300 animate-pulse">★</span>
+      </h2>
+
+      <div class="bg-gray-900 bg-opacity-80 rounded-lg p-4 shadow-md">
+        <div class="flex justify-between items-center mb-2">
+        </div>
+        <div class="flex justify-between items-center text-sm text-gray-300">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-300 mt-auto py-6 z-20">
+    © 2025 Minecraft Mod Archive - this website Unoffcial fan projects
+  </footer>
+</body>
+</html>
